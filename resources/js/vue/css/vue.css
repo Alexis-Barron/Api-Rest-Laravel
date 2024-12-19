@@ -1,0 +1,35 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+h1 {
+    @apply text-3xl text-center my-5 
+}
+
+input , select , textarea, .o-input__wrapper, .o-ctrl-sel{
+    @apply w-full 
+}
+
+.custom-notification {
+    @apply bg-green-500 text-white border border-green-700 rounded-lg px-6 py-4 text-lg font-semibold shadow-lg
+}
+
+.custom-notification .o-notification-close {
+    @apply text-white opacity-80 transition-opacity duration-300
+}
+
+.custom-notification .o-notification-close:hover {
+    @apply opacity-100
+}
+
+.custom-notification-danger {
+    @apply bg-red-500 text-white border border-red-700 rounded-lg px-6 py-4 text-lg font-medium shadow-md
+}
+
+.custom-notification-danger .o-notification-close {
+    @apply text-white opacity-80 transition-opacity duration-300 ease-in-out
+}
+
+.custom-notification-danger .o-notification-close:hover {
+    @apply opacity-100
+}
